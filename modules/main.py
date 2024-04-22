@@ -148,7 +148,7 @@ async def account_login(bot: Client, m: Message):
              url =  "https://d26g5bnklkwsh4.cloudfront.net/" + id + "/master.m3u8"
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
-            name = f'{str(count).zfill(3)}) {name1[:60]}'
+            name = f'{str(count).zfill(3)}) {MR} {name1[:60]}'
 
             if "youtu" in url:
                 ytf = f"b[height<={raw_text2}][ext=mp4]/bv[height<={raw_text2}][ext=mp4]+ba[ext=m4a]/b[ext=mp4]"
@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] 𝙑𝙞𝙙_𝙄𝘿 ➤** {str(count).zfill(3)}.\n**𝙏𝙄𝙏𝙇𝙀 ➤** {𝗻𝗮𝗺𝗲𝟭}.mkv\n**𝘽𝘼𝙏𝘾𝙃 ➤** **{raw_text0}**\n\n**𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝘿 𝘽𝙔 ➤** {MR}'
-                cc1 = f'**[📁] 𝙋𝙙𝙛_𝙄𝘿 ➤** {str(count).zfill(3)}.\n**𝙏𝙄𝙏𝙇𝙀 ➤** {𝗻𝗮𝗺𝗲𝟭}.pdf \n**𝘽𝘼𝙏𝘾𝙃 ➤** **{raw_text0}**\n\n**𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝘿 𝘽𝙔 ➤** {MR}'
+                cc = f'**[📽️] 𝙑𝙞𝙙_𝙄𝘿 ➤** {str(count).zfill(3)}.\n**𝙏𝙄𝙏𝙇𝙀 ➤** {𝗻𝗮𝗺𝗲𝟭} 『𝗛𝗘𝗠𝗨』.mkv\n**𝘽𝘼𝙏𝘾𝙃 ➤** **{raw_text0}**\n\n**𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝘿 𝘽𝙔 ➤** {MR}'
+                cc1 = f'**[📁] 𝙋𝙙𝙛_𝙄𝘿 ➤** {str(count).zfill(3)}.\n**𝙏𝙄𝙏𝙇𝙀 ➤** {𝗻𝗮𝗺𝗲𝟭}『𝗛𝗘𝗠𝗨』.pdf \n**𝘽𝘼𝙏𝘾𝙃 ➤** **{raw_text0}**\n\n**𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝘿 𝘽𝙔 ➤** {MR}'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
